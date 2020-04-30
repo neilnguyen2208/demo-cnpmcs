@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "demo-cnmpmcs"
+    }
+  },
+  "defaultProject": "demo-cnmpmcs",
+  "cli": {
+    "analytics": "db2548ad-2ad7-456e-a0a8-4cf2de315348"
+  }
 }
