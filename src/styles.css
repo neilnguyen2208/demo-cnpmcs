@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+.bar_btn:hover {
+    background: #006fd6;
+}
+
+.bar_btn:hover {
+    background: #006fd6;
+}
+
+.searchbar_input {
+    background: #65b3fc;
+    border: none;
+}
+
+.searchbar_input:focus {
+    background: #006fd6;
+    border: none;
+}
+
+.simple_label {
+}
+
+.simple_input {
+    border: 1px solid #c4c4c4;
+}
+
+.simple_input:hover {
+    border: 1px solid #c4c4c4;
+    cursor: text;
+}
+
+.simple_input:focus {
+    border: 1px solid #3366ff;
+}

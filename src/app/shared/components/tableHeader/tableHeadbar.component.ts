@@ -1,13 +1,13 @@
 import {Component} from '@angular/core';
 
 @Component({
-    selector: 'app-toolbar',
-    templateUrl: './toolbar.component.html',
+    selector: 'app-tableHeadbar',
+    templateUrl: './tableHeadbar.component.html',
     // styleUrls: ['./toolbar.component.css']
     
 })
 
-export class ToolbarComponent{
+export class TableHeadbarComponent{
     title = 'demo-cnmpmcs';
 }
 
