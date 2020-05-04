@@ -1,17 +1,16 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-    selector: 'app-labelTextInput',
-    templateUrl: './labelTextInput.component.html',
+    selector: 'app-labelTextArea',
+    templateUrl: './labelTextArea.component.html',
     // styleUrls: ['./searchbar.component.css']
 })
 
-export class LabelTextInputComponent {
-
+export class LabelTextAreaComponent {
 
     @Input()
     label = '';
     @Input()
-    content = '';
+    description = '';
 }
 

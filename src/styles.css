@@ -20,15 +20,21 @@
 .simple_label {
 }
 
-.simple_input {
+.simple_input,
+.simple_textArea {
     border: 1px solid #c4c4c4;
 }
 
-.simple_input:hover {
+.simple_input,
+.simple_textArea:hover {
     border: 1px solid #c4c4c4;
     cursor: text;
 }
 
-.simple_input:focus {
+.simple_input:focus,
+.simple_textArea:focus {
     border: 1px solid #3366ff;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

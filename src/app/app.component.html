@@ -1,18 +1,15 @@
-<div style="background: #EDF1F7; ">
-    Show current components UI: <br>
+<div style="background: #EDF1F7; height: 100%; padding: 5px">
     <!-- <app-slidebar></app-slidebar><br> -->
     <app-toolbar></app-toolbar><br>
-    <app-searchbar></app-searchbar> <br>
+    <!-- <app-searchbar></app-searchbar> <br> -->
     <!-- <app-pathbar></app-pathbar><br> -->
     <!-- <app-btnOK></app-btnOK><br> -->
     <app-tableHeadbar></app-tableHeadbar><br>
     <!-- <app-btnDecline></app-btnDecline><br> -->
-    <div style="display: flex;">
-        <app-labelTextInput></app-labelTextInput>
-        <app-labelTextInput></app-labelTextInput>
+    <div style="position: relative; display: flex; justify-content: space-between; width: 100%;">
+        <app-labelTextInput label="Mã DVT:" content={{Ma_DVT}}></app-labelTextInput>
+        <app-labelTextInput label="Tên DVT:" content={{Ten_DVT}}></app-labelTextInput>
     </div>
-    <div style="display: flex;">
-        <app-labelTextInput></app-labelTextInput>
-        <app-labelTextInput></app-labelTextInput>
-    </div>
+    <app-labelTextArea label="Mô tả:" description={{Description_DVT}}></app-labelTextArea>
+
 </div>
