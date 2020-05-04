@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { SlidebarComponent } from '../app/shared/components/Slidebar/slidebar.component'
@@ -21,6 +21,7 @@ import { ModalComponent } from './shared/modal/modal.component'
 @NgModule({
   declarations: [
     AppComponent,
+    routingComponents,
     SlidebarComponent,
     ToolbarComponent,
     SearchbarComponent,
