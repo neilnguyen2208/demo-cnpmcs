@@ -8,7 +8,7 @@ padding: 5px;
 box-sizing: border-box;
 ">
     <div class="bar_btn" style="width: 30px; height:30px; display: flex; cursor: pointer; border-radius: 4px;">
-        <img src="../../../../assets/resources/insert_btn.png" style="width: 20px; height:20px; margin:auto;" onClick = "handleInsert()"/>
+        <img src="../../../../assets/resources/insert_btn.png" style="width: 20px; height:20px; margin:auto;" />
     </div>
     <div class="bar_btn"
         style="width: 30px; height:30px; display: flex; margin-left: 8px; cursor: pointer; border-radius: 4px;">
@@ -16,7 +16,8 @@ box-sizing: border-box;
     </div>
     <div class="bar_btn"
         style="width: 30px; height:30px; display: flex; margin-left: 8px; cursor: pointer; border-radius: 4px;">
-        <img src="../../../../assets/resources/save_btn.png" style="width: 20px; height:20px; margin:auto;" />
+        <img src="../../../../assets/resources/save_btn.png" style="width: 20px; height:20px; margin:auto;"
+            (click)="openModal('custom-modal-save')" />
     </div>
     <div class="bar_btn"
         style="width: 30px; height:30px; display: flex; margin-left: 8px; cursor: pointer; border-radius: 4px;">
@@ -31,3 +32,18 @@ box-sizing: border-box;
         <img src="../../../../assets/resources/detail_btn.png" style="width: 20px; height:20px; margin:auto;" />
     </div>
 </div>
+
+<modal id="custom-modal-save">
+    <div class="modal">
+        <div class="modal-port">
+            <div class="modal-head">Thông báo</div>
+            <div class="modal-body">
+                <div class="modal-content">
+                    Lưu thành công
+                </div>
+                <button (click)="closeModal('custom-modal-save');">OK</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-background"></div>
+</modal>

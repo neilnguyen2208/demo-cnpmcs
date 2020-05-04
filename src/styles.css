@@ -17,9 +17,6 @@
     border: none;
 }
 
-.simple_label {
-}
-
 .simple_input,
 .simple_textArea {
     border: 1px solid #c4c4c4;
@@ -36,5 +33,11 @@
     border: 1px solid #3366ff;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

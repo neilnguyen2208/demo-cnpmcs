@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-
+import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { SlidebarComponent } from '../app/shared/components/Slidebar/slidebar.component'
 import { ToolbarComponent } from '../app/shared/components/Toolbar/toolbar.component'
@@ -11,8 +11,12 @@ import { ButtonOKComponent } from '../app/shared/components/btnOK/btnOK.componen
 import { ButtonDeclineComponent } from '../app/shared/components/btnDecline/btnDecline.component'
 import { TableHeadbarComponent } from '../app/shared/components/tableHeader/tableHeadbar.component'
 import { LabelTextInputComponent } from '../app/shared/components/labelTextInput/labelTextInput.component'
-import { LabelTextAreaComponent } from '../app/shared/components/labelTextArea/labelTextArea.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { LabelTextAreaComponent } from '../app/shared/components/labelTextArea/labelTextArea.component'
+import { ModalService } from './shared/modal/modal.service'
+import { ModalComponent } from './shared/modal/modal.component'
+// import
+
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -25,15 +29,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     ButtonDeclineComponent,
     TableHeadbarComponent,
     LabelTextInputComponent,
-    LabelTextAreaComponent
+    LabelTextAreaComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
+    // BrowserAnimationsModule,
+    FormsModule
     // DialogModule
   ],
-  providers: [],
+  providers: [ModalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
