@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
     selector: 'app-labelTextInput',
     templateUrl: './labelTextInput.component.html',
-    // styleUrls: ['./searchbar.component.css']
+    styleUrls: ["../../styles.css"]
 })
 
 export class LabelTextInputComponent {

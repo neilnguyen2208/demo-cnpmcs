@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { ModalService } from '../../shared/modal/modal.service'
+import { ModalService } from '../../modal/modal.service'
 @Component({
   selector: 'app-dvt-add-detail',
   templateUrl: './DVT_Add_Detail.component.html',
-  styleUrls: ["./style_add_detail.less"]
+  styleUrls: ["./style_add_detail.less","../../styles.css"]
 })
 
 export class DVT_Add_DetailComponent {
