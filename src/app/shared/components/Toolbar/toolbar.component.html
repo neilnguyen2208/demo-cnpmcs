@@ -11,29 +11,29 @@ box-sizing: border-box;
         <img src="../../../../assets/resources/insert_btn.png" style="width: 20px; height:20px; margin:auto;" />
     </a>
     <div class="bar_btn"
-        style="width: 30px; height:30px; display: flex; margin-left: 8px; cursor: pointer; border-radius: 4px;">
+        style="width: 30px; height:30px; display: flex; margin-left: 8px; cursor: pointer; border-radius: 4px;" routerLink="/dvt-edit-detail" routerLinkActive="active">
         <img src="../../../../assets/resources/edit_btn.png" style="width: 20px; height:20px; margin:auto;" />
     </div>
-    <div class="bar_btn"
+    <!-- <div class="bar_btn"
         style="width: 30px; height:30px; display: flex; margin-left: 8px; cursor: pointer; border-radius: 4px;">
         <img src="../../../../assets/resources/save_btn.png" style="width: 20px; height:20px; margin:auto;"
-            (click)="openModal('custom-modal-save')" />
-    </div>
+            (click)="openModal('custom-modal-dvt-save-detail')" />
+    </div> -->
     <div class="bar_btn"
-        style="width: 30px; height:30px; display: flex; margin-left: 8px; cursor: pointer; border-radius: 4px;">
+        style="width: 30px; height:30px; display: flex; margin-left: 8px; cursor: pointer; border-radius: 4px;" (click) = "openModal('custom-modal-dvt-delete-detail');">
         <img src="../../../../assets/resources/trash_btn.png" style="width: 20px; height:20px; margin:auto;" />
     </div>
-    <div class="bar_btn"
+    <!-- <div class="bar_btn"
         style="width: 30px; height:30px; display: flex; margin-left: 8px; cursor: pointer; border-radius: 4px;">
         <img src="../../../../assets/resources/search_btn.png" style="width: 20px; height:20px; margin:auto;" />
     </div>
     <div class="bar_btn"
         style="width: 30px; height:30px; display: flex; margin-left: 8px; cursor: pointer; border-radius: 4px;">
         <img src="../../../../assets/resources/detail_btn.png" style="width: 20px; height:20px; margin:auto;" />
-    </div>
+    </div> -->
 </div>
 
-<modal id="custom-modal-save">
+<modal id="custom-modal-dvt-save-detail">
     <div class="modal">
         <div class="modal-port">
             <div class="modal-head">Thông báo</div>
@@ -41,7 +41,23 @@ box-sizing: border-box;
                 <div class="modal-content">
                     Lưu thành công
                 </div>
-                <button (click)="closeModal('custom-modal-save');">OK</button>
+                <button (click)="closeModal('custom-modal-dvt-save-detail');">OK</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-background"></div>
+</modal>
+
+
+<modal id="custom-modal-dvt-delete-detail">
+    <div class="modal">
+        <div class="modal-port">
+            <div class="modal-head">Thông báo</div>
+            <div class="modal-body">
+                <div class="modal-content">
+                   Xoá chi tiết DVT thành công
+                </div>
+                <button (click)="closeModal('custom-modal-dvt-delete-detail');">OK</button>
             </div>
         </div>
     </div>

@@ -1,0 +1,31 @@
+<div style="background: #EDF1F7; padding: 5px; height: 100%;">
+    <!-- <app-slidebar></app-slidebar><br> -->
+    <app-toolbar></app-toolbar><br>
+    <!-- <app-searchbar></app-searchbar> <br> -->
+    <!-- <app-pathbar></app-pathbar><br> -->
+    <!-- <app-btnOK></app-btnOK><br> -->
+    <app-tableHeadbar></app-tableHeadbar><br>
+    <!-- <app-btnDecline></app-btnDecline><br> -->
+    <div style="position: relative; display: flex; justify-content: space-between; width: 100%;">
+        <app-labelTextInput label="Mã DVT:" content={{Ma_DVT}} [isReadOnly]="false"></app-labelTextInput>
+        <app-labelTextInput label="Tên DVT:" content={{Ten_DVT}} [isReadOnly]="false"></app-labelTextInput>
+    </div>
+    <app-labelTextArea label="Mô tả:" description={{Description_DVT}} [isReadOnly]="false"></app-labelTextArea>
+    <button (click)="openModal('custom-modal-save-detail')">Lưu thông tin</button>
+</div>
+
+
+<modal id="custom-modal-save-detail">
+    <div class="modal">
+        <div class="modal-port">
+            <div class="modal-head">Thông báo</div>
+            <div class="modal-body">
+                <div class="modal-content">
+                   Lưu thông tin thành công
+                </div>
+                <button (click)="closeModal('custom-modal-save-detail');">OK</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-background"></div>
+</modal>
