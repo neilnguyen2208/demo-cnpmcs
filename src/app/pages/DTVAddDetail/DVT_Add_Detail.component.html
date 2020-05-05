@@ -1,0 +1,25 @@
+<div style="background: #EDF1F7; padding: 5px; height: 100%;">
+    <app-toolbar></app-toolbar><br>
+    <app-tableHeadbar></app-tableHeadbar><br>
+    <div style="position: relative; display: flex; justify-content: space-between; width: 100%;">
+        <app-labelTextInput label="Mã DVT:" content="" [isReadOnly]="false"></app-labelTextInput>
+        <app-labelTextInput label="Tên DVT:" content="" [isReadOnly]="false"></app-labelTextInput>
+    </div>
+    <app-labelTextArea label="Mô tả:" description="" [isReadOnly]="false"></app-labelTextArea>
+    <button (click)="openModal('custom-modal-add-detail')">Thêm ĐVT</button>
+</div>
+
+<modal id="custom-modal-add-detail">
+    <div class="modal">
+        <div class="modal-port">
+            <div class="modal-head">Thông báo</div>
+            <div class="modal-body">
+                <div class="modal-content">
+                   Thêm thành công
+                </div>
+                <button (click)="closeModal('custom-modal-add-detail');">OK</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-background"></div>
+</modal>

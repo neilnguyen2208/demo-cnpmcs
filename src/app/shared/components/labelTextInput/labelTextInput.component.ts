@@ -13,7 +13,8 @@ export class LabelTextInputComponent {
     label = '';
     @Input()
     content = '';
-
+    @Input()
+    isReadOnly: Boolean = false;
 
 
 }

@@ -12,5 +12,7 @@ export class LabelTextAreaComponent {
     label = '';
     @Input()
     description = '';
+    @Input()
+    isReadOnly: Boolean = false;
 }
 

@@ -41,3 +41,22 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+button {
+    display: flex;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #0095ff;
+    box-shadow: none;
+    border: 1px solid #0095ff;
+    color: #fff;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: medium;
+}
+
+button:hover {
+    background: #006fd6;
+    border: white 1px solid;
+}
